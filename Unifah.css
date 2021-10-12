@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+html {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    line-height: 1;
+    overflow-y: scroll;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+/* En tete du site unifa */
+.tete1{
+    text-align: right;
+background-color: rgb(222, 235, 233);
+}
+
+*{
+    box-sizing: border-box;
+}
+html {
+    display: block;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* partie regroupant les codes css
+ du menu deroulant */
+
+#menu ul
+{
+    margin: 1px;
+    padding: 1px;
+    list-style: none;
+
+}
+#menu ul li
+{
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 140px;
+    position: relative;
+position: relative;
+}
+#menu ul li ul
+{
+    position:absolute;
+    left: 16px;
+    z-index: 3;
+    background-color: rgb(75, 119, 139);
+    display: none;
+    padding: 3px;
+    margin: 2;
+}
+
+#menu ul li ul
+{
+    position:absolute;
+    left: 6px;
+    z-index: 3;
+    background-color: rgb(75, 119, 139);
+    display: none;
+    padding: 0px;
+    margin: 0;
+}
+#menu ul li ul li
+{
+    display: block;
+    color: #f7f0bb;
+    font-family: verdana,Geneva,sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0;
+    border-top: 1px solid rgb(255, 255, 255);
+    min-width: 150px;
+}
+#menu ul li ul li:first-child
+{
+    border-top:none;
+}
+#menu ul li ul li:hover
+{
+    color: rgb(102, 95, 95);
+    background-color: transparent;
+    margin: auto;
+}
+
+#menu ul li:hover ul 
+{
+    display: block;
+}
+#menu li a 
+{ 
+    color: #f1ebeb;
+    text-decoration: none;
+}
+#menu li a:hover{
+    color: rgb(255, 255, 255);
+}
+#menu ul li img
+{
+    display: block;
+    margin: 2px auto;
+    height: 28px;
+    z-index: 0;
+}
+#menu ul li span
+{
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color: #005a58;
+}
+
+/* code css du diaporama*/
+
+.diaporama{
+    margin: 0 auto;
+    width: 1290px;
+    height: 500px;
+    background-image: url("img/image1WWWW.png");
+background-repeat: no-repeat;
+background-position: center;
+   -webkit-animation-name: diapo1;
+   -webkit-animation-duration: 9s;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+
+
+   -moz-animation-name: diapo1;
+   -moz-animation-duration: 9s;
+   -moz-animation-timing-function: linear;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-direction: normal;
+
+   animation-name: diapo1;
+   animation-duration: 9s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+
+
+}
+
+@-webkit-keyframes diapo1{
+    0%{  background-image: url("img/image1WWWW.png");  }
+    33%{  background-image: url("img/image2.png");  }
+    66%{  background-image: url("img/image3.png");  }
+    99%{  background-image: url("img/image4.png");  }
+}
+
+@-moz-keyframes diapo1{
+    0%{  background-image: url("img/image1WWWW.png");  }
+    33%{  background-image: url("img/image2.png");  }
+    66%{  background-image: url("img/image3.png");  }
+    99%{  background-image: url("img/image4.png");  }
+}
+@keyframes diapo1{
+    0%{  background-image: url("img/image1WWWW.png");  }
+    33%{  background-image: url("img/image2.png");  }
+    66%{  background-image: url("img/image3.png");  }
+    99%{  background-image: url("img/image4.png");  }
+}
+
+
+.unif{
+    color: #000;
+}
+ 
+.dodo1{ display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+
+
+}    
+
+.mitan{
+    margin: 12px auto;
+    width: 87%;
+    border-left: 1px solid #828f89;
+    border-right: 1px dashed #828f89;
+}
+
+.mitan p{
+    margin: 12px auto;
+    width: 87%;
+}
+
+header{
+    background-color: #bce3e3;
+    font-family: Anton display;
+    border-top: 2px solid #38628a;
+    
+}
+
+body .dodo1{
+    /* border-bottom: 2px solid #4c5585; */
+   /*  margin-left: 980px;*/
+     font-size: 13.8px;
+     background-color: #e4f5f4;
+     text-align: right;
+   padding-block: 13px;
+     padding-right: 30px;
+     color: #38628a;
+     font-family: Noto Sans;
+
+}
+
+    
+
+header .dodo1{
+    
+    font-size: 10px;
+}
+header .dodo2 {
+    background-color: #e3e8e8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+header .cc{
+    height: 50px;
+    background-color: #38628a;
+}
+
+header h1{
+    font-size: 30px;
+    color: #38628a;
+    text-decoration: none;
+    /*box-shadow: 6px 6px 3px black;*/
+    text-shadow:  6px 4px 5px #26a332;
+    font-family: Poppins;
+    font-weight: bolder;
+    
+    
+}
+header nav {
+    background-color:  #38628a;
+    padding-block: 5px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    box-shadow:3px 2px 8px black;
+}
+header nav .onglet {
+    margin-left: 53px;
+}
+header nav .onglet a{
+    background-color:  #38628a;
+    text-decoration: none;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.xo{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: #000;
+    padding-top: 10px;
+    margin-left: 450px;
+    font-size: 33px;
+    text-shadow: 0px 0px 2.5px #a83e3e;
+    padding-bottom: 0px;
+}
+.xoo{
+    margin-left: 270px;
+    padding-top: 0px;
+}
+
+
+
+body .lolo{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+h3{
+    
+    margin-left: 200px;
+}
+h4{
+    border-top: 5px solid #3599b0;
+    width: 97%;
+    margin-left: 20px;
+}
+.ji{
+    margin-left: 350px;
+}
+body .jii{
+    margin-left: 400px;
+    font-size: 15px;
+}
+.main #img1{
+    height: 600px;
+    width: 1200px;
+}
+footer .f1{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+.sass{
+    width: 1001px;
+    background-color: #97b6bd;
+    border: 3px#9cb9bd dashed ;
+}
+
+
+
+
+
+
+.unif{
+    width: 1001px;
+    background-color: #90afb6;
+    border: 3px#92babe dashed ;
+}
+
+a:hover{
+    color: rgb(26, 25, 25);
+}
+
+
+
+
+.Gael{
+    width: 1001px;
+    background-color: #90afb6;
+    border: 3px#92babe dashed ;
+}
+
+
+a:hover{
+    color: rgb(26, 25, 25);
+}
+
+
+
+
+
+
+.montant{
+    width: 1001px;
+    background-color: #90afb6;
+    border: 3px#92babe dashed ;
+}
+
+
+a:hover{
+    color: rgb(26, 25, 25);
+}
+
+
+
+.gael{
+    width: 1901px;
+    background-color: #90afb6;
+    border: 3px#92babe dashed ;
+}
+.unifa1{background-color:#38628a;
+    color: #f8fcfc;
+    padding-block: 3px
+
+}
+
+.sam{
+    background-color:#38628a;
+color: #f8fcfc;
+padding-block: 16px;
+}
+
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    body{
+        font-family: montserrat;
+    }
+    nav{
+        background: #0082e6;
+        height: 50px;
+        width: 100%;
+    }
+    
+    nav ul{
+        float: right;
+        margin-right: 10px;
+    }
+   
+    nav ul li a{
+        color: white; 
+    }
+    a.active,a:hover{
+       
+        transition: .5s; 
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+   
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+     nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+             left: -100%; 
+            text-align: center;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover{
+            background: none;
+           color: #5c6977;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    
+        
+    }
+    
+    
+    
+    
+    
+    
+
+
